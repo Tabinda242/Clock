@@ -1,0 +1,259 @@
+
+body {
+    background-image: linear-gradient(#02aab0 , #00cdac);
+}
+
+.main {
+    font-size: 50px;
+    color: white;
+    margin-left: 25%;
+    margin-right: 40%;
+    border-style: solid;
+    border-color: #848484;
+    background-image: linear-gradient(#02aab0 , #00cdac);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.container::after {
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 40px;
+    height: 40px;
+    top: 56%;
+    left:45%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+} 
+.clc-img {
+    width: 520px;
+    height: 520px;
+    margin-top: 8%;
+    margin-left: -15%;
+    border-radius: 50%;
+}
+.hour,
+.min,
+.sec {
+    position: absolute;
+}
+.hour,
+.hr {
+    width: 170px;
+    height: 250px;
+    margin-top: 82px;
+    margin-left: -4.5%;
+
+}
+.min,
+.mn {
+    width: 170px;
+    height: 250px;
+    margin-top: 78px;
+    margin-left: -5%;
+}
+.sec,
+.sc {
+    width: 170px;
+    height: 250px;
+    margin-top: 80px;
+    margin-left: -4.5%;
+    
+}
+.hr,
+.mn,
+.sc {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.hr::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 150px;
+    background-color: #848484;
+    margin-top: -5%;
+    border-radius: 8px 8px 0px 0px;
+}
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 190px;
+    background-color: #d6d6d6;
+    margin-top: -10%;
+    border-radius: 8px 8px 0px 0px;
+}
+.sc::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 220px;
+    background-color: #ff6767;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: -18%;
+}
+
+ /* Responsive Queries   */
+
+ @media only screen and (max-width: 1170px){
+    .container::after {top: 57%;
+    margin-left: -2%;}
+    .main {font-size: 45px;
+        margin-left: 25%;
+        margin-right: 40%;}
+        .hour,
+        .hr { 
+            margin-top: 92px;}
+            .min,
+       .mn {
+           margin-top: 88px;
+        }
+            .sec,
+            .sc {
+                margin-left: -6%;
+                margin-top: 90px;}
+        }
+
+        
+@media only screen and (max-width: 1055px) {
+    .container::after {top: 57%;
+        margin-left: -2.5%;}
+    .main {font-size: 45px;
+        margin-left: 18%;
+        margin-right: 42%;}
+    }
+
+@media only screen and (max-width: 945px) {
+        .container::after {top: 57%;
+            margin-left: -3%;}
+        .main {font-size: 45px;
+            margin-left: 15%;
+            margin-right: 40%;}
+    .hour,
+    .hr { 
+        margin-top: 90px;
+        margin-left: -6%;}
+    .min,
+    .mn {
+        margin-left: -6%;
+        }
+    .sec,
+    .sc {
+        margin-left: -6.5%;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 895px) {
+    .container::after {top: 57%;}
+    .main {font-size: 45px;
+        margin-left: 15%;
+        margin-right: 40%;}
+    .min,
+    .mn {
+        margin-left: -6%;
+        margin-top: 88px;
+        }
+}
+
+@media only screen and (max-width: 850px) {
+    .container::after {top: 57%;}
+    .main {font-size: 45px;
+        margin-left: 10%;
+        margin-right: 40%;}
+
+}
+
+@media only screen and (max-width: 805px) {
+    .container::after {top: 57%;}
+    .main {font-size: 45px;
+        margin-left: 10%;
+        margin-right: 28%;}
+}
+
+@media only screen and (max-width: 760px) {
+    .container::after {top: 57%;}
+        .main {font-size: 45px;
+            margin-left: 10%;
+            margin-right: 28%;}
+}
+
+@media only screen and (max-width: 715px) {
+    .container::after {top: 57%;
+        margin-left: 5%;}
+        .main {font-size: 45px;
+            margin-left: 15%;
+            margin-right: 25%;}
+            .clc-img {margin-left: 1%;}
+            .hour,
+            .hr { 
+                margin-top: 90px;
+                margin-left: 2%;}
+            .min,
+            .mn {
+                margin-left: -1%;}
+            .sec,
+            .sc {
+                margin-left: 0.5%;
+                margin-top: 90px;}
+}
+
+@media only screen and (max-width: 670px) {
+    .container::after {top: 57%;
+    margin-left: 5%;}
+    .main {font-size: 45px;
+        margin-left: 15%;
+        margin-right: 25%;}
+    .clc-img {margin-left: 1%;}
+    .hour,
+    .hr { 
+        margin-top: 90px;
+        margin-left: 2%;}
+    .min,
+    .mn {
+        margin-left: -1%;}
+    .sec,
+    .sc {
+        margin-left: -1%;
+        margin-top: 92px;}
+}
+
+@media only screen and (max-width: 625px) {
+    .container::after {top: 57%;}
+    .main {font-size: 45px;
+        margin-left: 10%;
+        margin-right: 15%;}
+}
+
+@media only screen and (max-width: 576px) {
+    .container::after {top: 57%;}
+    .main {font-size: 45px;
+        margin-left: 10%;
+        margin-right: 15%;}
+}
+
+    @media only screen and (max-width: 530px) {
+            .container::after {top: 52%;}
+            .main {font-size: 15px;
+                margin-right: 20%;
+                text-align: center;
+            }
+                .clc-img{
+                    width: 395px;
+                    height: 395px;
+                }
+                .hour,
+            .hr { margin-top: 62px;
+                margin-left: 1%;}
+            .min,
+            .mn {margin-top: 60px;}
+            .sec,
+            .sc {margin-top: 60px;
+                margin-left: -0.5%;}
+            }

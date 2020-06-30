@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+    <script>  
+
+        var today = new Date();
+        var dayNames =  [' Sun', ' Mon', ' Tue', ' Wed', ' Thu', ' Fri', ' Sat'];
+        var day = today.getDay();
+        var currentDay = dayNames[day];
+        document.write(currentDay + ',');
+
+       
+        var monthsNames = [' Januaray' , ' February', ' March', ' April', ' May', ' June', ' July', ' August', ' September', ' October', ' November', ' Decenber'];
+        var month = today.getMonth();
+        var nameOfMonth = monthsNames[month];
+        document.write(nameOfMonth);
+
+        var date = today.getDate();
+        document.write(' ' + date);
+
+        var currentYear = today.getFullYear();
+        document.write(' ' + currentYear);    
+
+       </script>
+    </div>
+
+    <div class="container">
+        <div>
+            <img src="image/jsclock.jpg" alt="clock image" class="clc-img">
+        </div>
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
